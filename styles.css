@@ -1,0 +1,85 @@
+
+
+body {
+    font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+    font-size:16px;
+    display: flex;
+    justify-content: center;
+    background-color: #141264;
+}
+
+main {
+    display: flex;
+    width: 90vw;
+    justify-content: center;
+}
+
+.info-section {
+    background-color: rgb(141, 141, 255);
+    width: 40%;
+    padding-left: 10px;
+    
+}
+
+.sticky-info {
+    position: sticky;
+    top: 0;
+    padding-top: 100px;
+}
+
+.main-column {
+    background-color: rgb(97, 255, 255);
+    width: 60%;
+    margin-left: 10px;
+    padding: 0 10px 0 10px;
+}
+
+
+.project-section {
+    background-color: blueviolet;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    /*padding-right: 10px;*/
+}
+
+.contact-icons {
+    position: fixed;
+    bottom: 0;
+    padding: 0 0 100px 50px;
+}
+
+.margin-t-100 {
+    margin-top: 100px;
+}
+
+.content-box {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two equal columns */
+    grid-template-rows: auto auto; /* Two rows */
+    gap: 15px;
+
+    border: 1px solid lightblue;
+    border-radius: 10px;
+
+    transition: opacity 0.3s ease, background-color 0.3s ease;
+    opacity: 1;
+}
+
+ul {
+    list-style: none; 
+    padding-left: 0;
+    padding: 0 10px 0 10px;
+}
+
+li {
+    margin: 5px 0 5px 0;
+}
+
+.content-box:hover {
+    background-color: blanchedalmond;
+}
+  
+.content-box:hover + .sec-proj {
+    background-color: yellow;
+}
