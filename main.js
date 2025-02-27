@@ -1,5 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const contentBoxes = document.querySelectorAll('.content-box'); //Content boxes used in my projects, experience and education areas.
+    const contentBoxes = document.querySelectorAll('.content-box');
+    const techIconSect = document.querySelector('.tech-icons');
+    const techIcons = techIconSect.querySelectorAll('img');
   
     contentBoxes.forEach(box => {
       box.addEventListener('mouseenter', () => {
@@ -17,4 +19,27 @@ document.addEventListener('DOMContentLoaded', () => {
         });
       });
     });
+
+    techIcons.forEach(box => {
+      box.addEventListener('mouseenter', () => {
+
+        techIcons.forEach(otherBox => {
+          if (otherBox !== box){
+            otherBox.style.opacity = '0.5';
+          }
+        });
+      });
+
+      box.addEventListener('mouseleave', () => {
+
+        techIcons.forEach(otherBox => {
+          if (otherBox !== box){
+            otherBox.style.opacity = '1';
+          }
+        });
+      });
+
+    });
+
+
   });

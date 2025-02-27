@@ -31,6 +31,9 @@ main {
     background-color: rgb(97, 255, 255);
     width: 60%;
     margin-left: 10px;
+}
+
+.pad-lr-10 {
     padding: 0 10px 0 10px;
 }
 
@@ -53,12 +56,21 @@ main {
     margin-top: 100px;
 }
 
-.content-box {
+.grid-box {
     display: grid;
     grid-template-columns: 1fr 1fr; /* Two equal columns */
     grid-template-rows: auto auto; /* Two rows */
     gap: 15px;
+}
 
+.exp-grid-box {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; /* Two equal columns */
+    grid-template-rows: auto auto auto; /* Two rows */
+    gap: 15px;
+}
+
+.content-box {
     border: 1px solid lightblue;
     border-radius: 10px;
 
@@ -82,4 +94,22 @@ li {
   
 .content-box:hover + .sec-proj {
     background-color: yellow;
+}
+
+.tech-icons {
+    display: flex; 
+    justify-content: center;
+}
+
+.tech-icons img {
+    height: 55px; width: 55px;
+}
+
+.tech-icons img:not(:first-child) {
+    margin-left: 40px;
+}
+
+.tech-icons img:hover {
+    height: 80px; width: 80px;
+    transition: height,width 0.4s;
 }
