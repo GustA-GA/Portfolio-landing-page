@@ -4,8 +4,8 @@ document.addEventListener('DOMContentLoaded', () => {
     const techIcons = techIconSect.querySelectorAll('img');
   
     document.addEventListener("mousemove", (e) => {
-      const x = e.clientX; // Get cursor's X position
-      const y = e.clientY; // Get cursor's Y position
+      const x = e.pageX; // Get cursor's X position
+      const y = e.pageY; // Get cursor's Y position
   
       // Update the background with a radial gradient centered at the cursor's position
       document.body.style.background = `
