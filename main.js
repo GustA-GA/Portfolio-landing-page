@@ -4,10 +4,10 @@ document.addEventListener('DOMContentLoaded', () => {
     const techIcons = techIconSect.querySelectorAll('img');
   
     document.addEventListener("mousemove", (e) => {
-      const x = e.pageX; // Get cursor's X position
-      const y = e.pageY; // Get cursor's Y position
+      const x = e.pageX; 
+      const y = e.pageY;
   
-      // Update the background with a radial gradient centered at the cursor's position
+      // Background radial gradient
       document.body.style.background = `
           radial-gradient(
               circle 150px at ${x}px ${y}px,#0F0F7C,#0D0C52
@@ -24,10 +24,10 @@ document.addEventListener('DOMContentLoaded', () => {
       sections.forEach((section, index) => {
         const rect = section.getBoundingClientRect();
     
-        // Check if the section is in the viewport
-        if (rect.top <= 100 && rect.bottom >= 10) { // Adjust 100px offset if needed
-          links.forEach(link => link.classList.remove('active')); // Remove active class from all links
-          links[index].classList.add('active'); // Add active class to the corresponding link
+        // Checking if the section is in the viewport
+        if (rect.top <= 100 && rect.bottom >= 10) { 
+          links.forEach(link => link.classList.remove('active')); 
+          links[index].classList.add('active'); 
         }
       });
     });

@@ -1,13 +1,14 @@
 
 
 body {
-    font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+    font-family:"Work Sans", "Trebuchet MS", Arial, Helvetica, sans-serif;
     font-size:16px;
     display: flex;
     justify-content: center;
     color: aliceblue;
     background-color: #0D0C52;
 }
+
 
 main {
     display: flex;
@@ -73,6 +74,7 @@ a {
     grid-template-columns: 1fr 1fr; /* Two equal columns */
     grid-template-rows: auto auto; /* Two rows */
     gap: 15px;
+    margin-bottom: 20px;
 }
 
 .exp-grid-box {
@@ -113,7 +115,6 @@ li {
 
 .link-icon {
     opacity: 0;
-    transition: opacity 0.3s ease;
     margin-left: 10px;
   }
   
