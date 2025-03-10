@@ -5,7 +5,8 @@ body {
     font-size:16px;
     display: flex;
     justify-content: center;
-    background-color: #141264;
+    color: aliceblue;
+    background-color: #0D0C52;
 }
 
 main {
@@ -14,8 +15,16 @@ main {
     justify-content: center;
 }
 
+footer {
+    margin-top: 320px;
+}
+
+a {
+    text-decoration: none;
+    color: aliceblue;
+}
+
 .info-section {
-    background-color: rgb(141, 141, 255);
     width: 40%;
     padding-left: 10px;
     
@@ -28,7 +37,7 @@ main {
 }
 
 .main-column {
-    background-color: rgb(97, 255, 255);
+    /* background-color: rgb(97, 255, 255); */
     width: 60%;
     margin-left: 10px;
 }
@@ -39,7 +48,8 @@ main {
 
 
 .project-section {
-    background-color: blueviolet;
+    display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     align-content: center;
@@ -56,6 +66,8 @@ main {
     margin-top: 100px;
 }
 
+
+
 .grid-box {
     display: grid;
     grid-template-columns: 1fr 1fr; /* Two equal columns */
@@ -71,9 +83,6 @@ main {
 }
 
 .content-box {
-    border: 1px solid lightblue;
-    border-radius: 10px;
-
     transition: opacity 0.3s ease, background-color 0.3s ease;
     opacity: 1;
 }
@@ -89,12 +98,30 @@ li {
 }
 
 .content-box:hover {
-    background-color: blanchedalmond;
+    background-color: #173E99;
+    border-radius: 10px;
 }
+
+.content-box:hover h3{
+    color: #24E2F0;
+}
+
+.content-box:hover .proj-link{
+    color: #24E2F0;
+    
+}
+
+.link-icon {
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    margin-left: 10px;
+  }
   
-.content-box:hover + .sec-proj {
-    background-color: yellow;
-}
+  .content-box:hover .link-icon {
+    opacity: 1;
+    transform: rotate(-90deg);
+    transition: transform 0.2s;
+  }
 
 .tech-icons {
     display: flex; 
@@ -112,4 +139,18 @@ li {
 .tech-icons img:hover {
     height: 80px; width: 80px;
     transition: height,width 0.4s;
+    background-color: #24E2F0;
+    border-radius: 10px;
+}
+
+.sticky-info nav a {
+    text-decoration: none;
+    color: #3a3091;
+    font-weight: normal;
+    transition: font-weight 0.3s ease, color 0.3s ease;
+  }
+  
+.sticky-info nav a.active {
+    font-weight: bold;
+    color:aliceblue;
 }
