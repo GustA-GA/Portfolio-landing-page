@@ -1,7 +1,7 @@
 
 
 body {
-    font-family:"Work Sans", "Trebuchet MS", Arial, Helvetica, sans-serif;
+    font-family: "Work Sans", "Trebuchet MS", Arial, Helvetica, sans-serif;
     font-size:16px;
     display: flex;
     justify-content: center;
@@ -9,6 +9,10 @@ body {
     background-color: #0D0C52;
 }
 
+h1,h2,h3 {
+    font-family: Inter, "Work Sans", "Trebuchet MS", Arial, Helvetica, sans-serif;
+    font-feature-settings: 'liga' 1, 'calt' 1;
+}
 
 main {
     display: flex;
@@ -28,7 +32,6 @@ a {
 .info-section {
     width: 40%;
     padding-left: 10px;
-    
 }
 
 .sticky-info {
@@ -38,9 +41,34 @@ a {
 }
 
 .main-column {
-    /* background-color: rgb(97, 255, 255); */
     width: 60%;
     margin-left: 10px;
+}
+
+/* One column when the window is below 768px */
+@media (max-width: 768px) {
+    main {
+      flex-direction: column;
+    }
+    
+    .info-section,
+    .main-column {
+      width: 100%;
+      margin-left: 0;
+      margin-bottom: 20px;
+    }
+
+    .proj-preview-img {
+        object-fit: cover;
+        height: 50px;
+        width: 100px;
+    }
+
+    .contact-icons {
+        right: 0;
+        background-color: #0c0a47;
+        padding: 10px 10px 10px 10px;
+    }
 }
 
 .pad-lr-10 {
@@ -60,7 +88,7 @@ a {
 .contact-icons {
     position: fixed;
     bottom: 0;
-    padding: 0 0 100px 50px;
+    margin: 0 0 100px 50px;
 }
 
 .margin-t-100 {

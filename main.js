@@ -9,9 +9,7 @@ document.addEventListener('DOMContentLoaded', () => {
   
       // Background radial gradient
       document.body.style.background = `
-          radial-gradient(
-              circle 150px at ${x}px ${y}px,#0F0F7C,#0D0C52
-          )
+          radial-gradient(circle 150px at ${x}px ${y}px,#0F0F7C,#0D0C52)
       `;
     });
 
