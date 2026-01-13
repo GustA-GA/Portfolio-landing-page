@@ -6,7 +6,11 @@ body {
     display: flex;
     justify-content: center;
     color: aliceblue;
-    background-color: #0D0C52;
+    background: radial-gradient(
+    circle 150px at var(--mouse-x, 50%) var(--mouse-y, 50%), 
+    #0F0F7C, 
+    #0D0C52
+  );
 }
 
 h1,h2,h3 {

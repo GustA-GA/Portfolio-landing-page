@@ -4,13 +4,11 @@ document.addEventListener('DOMContentLoaded', () => {
     const techIcons = techIconSect.querySelectorAll('img');
   
     document.addEventListener("mousemove", (e) => {
-      const x = e.pageX; 
-      const y = e.pageY;
-  
-      // Background radial gradient
-      document.body.style.background = `
-          radial-gradient(circle 150px at ${x}px ${y}px,#0F0F7C,#0D0C52)
-      `;
+      const x = e.clientX;
+      const y = e.clientY;
+
+      document.body.style.setProperty('--mouse-x', `${x}px`);
+      document.body.style.setProperty('--mouse-y', `${y}px`);
     });
 
 
