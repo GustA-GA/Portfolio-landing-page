@@ -10,7 +10,7 @@ body {
     circle 150px at var(--mouse-x, 50%) var(--mouse-y, 50%), 
     #0F0F7C, 
     #0D0C52
-  );
+  ) fixed;
 }
 
 h1,h2,h3 {
